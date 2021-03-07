@@ -5,7 +5,7 @@ from discord.ext import commands
 prefix = Config.prefix
 token = Config.bot_token
 
-bot = commands.Bot(command_prefix=prefix)
+bot = commands.Bot(command_prefix=prefix, intents=discord.Intents.all())
 
 bot.setup = False
 bot.role_name = Config.role_name
